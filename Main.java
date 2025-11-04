@@ -29,7 +29,47 @@ public class Main {
       System.out.println(y > y); //true
       System.out.println(y == y); //true
       
-      double z = 6.0
+      double z = 6.0;
       System.out.println( x == z); // true 6 and 6.0 are the same value!
+
+      // IF STATEMENTS: use boolean expressions to make
+      // DECISIONS about which code to excute
+
+      //Determine what value or condition your choice rests on
+      //EX: Using the elevator at BWL depends on TIME
+      
+      double time = 8.5; // means 8:30 AM
+      time = 7.75; // mean 7:45 AM
+      time = 9; // means 9 AM
+      
+      if (time < 8) {
+         // if statement BODY only runs if CONDITIONS were TRUE
+         System.out.println("you can take the elevator!");
+      }
+      // Statement below is outside of the if statement, so it'll run anyway
+      System.out.println("The elevator is only available before 8 AM!");
+
+      // TWO-WAY SELECTION: if block + else block
+      if (time < 8) {
+         System.out.println("Eligible for elevator!");
+      }
+   
+      else {
+         // STATEMENT in ELSE block runs when IF block is false
+         System.out.println("Take the stairs...");
+      }
+
+      // Another example of TWO-WAY SELECTION
+      // in this case, using just a boolean VALUE (not an EXPRESSION)
+      boolean heads = false; 
+      // if (true)
+      if (heads) {
+         System.out.println("Flipped heads! Wear White");
+      }
+      else {
+         System.out.println("Flipped tails Wear Black!");
+      }
+
+
    }
 }
